@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" type="text/css" href="css/form_style.css" />
+		<link rel="stylesheet" type="text/css" href="css/style3.css" />
+    
+        	<link href="jquery-ui.css" rel="stylesheet">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+          <script src="js/jquery-ui.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+     
+        <script>
+  $(document).ready(function(){
+	  $("#start").datepicker();
+	  $("#end").datepicker();
+	  });
+  </script>
+<title>無標題文件</title>
+</head>
+<body>
+<section>
+	<p><button id="trigger-overlay" type="button">Open Overlay</button></p>
+</section>
+<div class="overlay overlay-slidedown">
+			<button type="button" class="overlay-close">Close</button>
+			<nav>
+  
+  <img src="img/logo.png" width="848" height="46" />
+<form action="" method="post" class="bootstrap-frm">
+        
+      <h1>台北文華東方酒店 飯店需求單
+        <span></span>
+       </h1>
+        <div id="leftcolumn">
+        <label>
+            <span>住客姓名 :</span>
+            <input id="name" type="text" name="name" placeholder="Same as passport or ID if you are Taiwanese" />
+        </label>
+        <label>
+            <span>旅行社名稱(連絡人) :</span>
+            <input id="name" type="text" name="contactor" placeholder="" />
+        </label>
+    
+        <label>
+            <span>Email :</span>
+            <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+        </label>
+        <label>
+            <span>電話 :</span>
+            <input id="phone" type="text" name="phone" placeholder="Phone Number" />
+        </label>
+        <label>
+        <span>入住日期 :</span>
+        <p><input type="text" id="start"></p>
+        </label>     
+       <label>
+        <span>退房日期 :</span>
+        <p><input type="text" id="end"></p>
+        </label>     
+       
+         
+       
+        </div>
+        <div id="rightcolumn">
+        <label>
+        <span>入住房型 :</span>
+        <select name="YourLocation">
+　         <option value="seletion">請選擇以下房型▼</option>
+　         <option value="deluxeroom">豪華客房(Deluxe Room)NT$19000</option>
+　         <option value="mandarinroom">文華客房(Mandarin Room)NT$20000</option>
+        </select>
+        </label>
+    
+        <label>
+        
+            <span>人數 :</span>
+            <input  id="num1" type="text" name="num1" placeholder="大人" />
+            <input  id="num2" type="text" name="num2" placeholder="小孩" />
+            <input  id="num3" type="text" name="num3" placeholder="需要照護人士" />
+        </label>
+        <label>
+        <span>半日遊行程 :</span>
+        <select name="YourLocation">
+　         <option value="seletion">請選擇以下行程(三選一)▼</option>
+　         <option value="tpe">1.台北市區觀光</option>
+　         <option value="north">2.半日基隆港、野柳、北海岸公園觀光 </option>
+　         <option value="art">3.民俗藝術觀光</option>
+        </select>
+        </label>
+    
+        <label>
+            <span>其他需求 :</span>
+            <textarea id="ext" name="message" placeholder="Your Message to Us" style="width:270px; height:140px;"></textarea>
+        </label> 
+        
+        
+        </div>    
+        
+        <label>
+         
+            <input type="button" class="button" value="寄出" /> 
+        </label>     
+       
+       <div id="clear"></div>
+    </form>
+    <div class="login-help">
+      <p>大登旅行社 台北服務電話:886-2-5582-5517 &nbsp&nbsp&nbsp E-mail: reservation@martin.com.tw</p>
+    </div>
+    </nav>
+    
+</div>
+        <script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/demo1.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+html,body{
+	margin:0px;
+	padding:0px;
+}
+h3 {
+	text-align: center;
+	font-family: georgia;
+	color: #FFF;
+	border-bottom: 1px solid #EEE;
+	padding: 5px;
+	font-size: x-large;
+	margin-top: -20px;
+}
+
+
+/* #### bootstrap Form #### */
+.bootstrap-frm {
+	position:relative;
+	margin-top:15px;
+	margin-left:auto;
+	margin-right:auto;
+    max-width: 900px;
+    padding: 20px 20px 35px 20px;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #DDD;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	 background: white;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.bootstrap-frm:before{
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+	
+	}
+
+.bootstrap-frm h1 {
+   margin: -20px -20px 21px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  text-shadow: 0 1px white;
+  background: #f3f3f3;
+  border-bottom: 1px solid #cfcfcf;
+  border-radius: 3px 3px 0 0;
+  background-image: -webkit-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -moz-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -o-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: linear-gradient(to bottom, whiteffd, #eef2f5);
+  -webkit-box-shadow: 0 1px whitesmoke;
+  box-shadow: 0 1px whitesmoke;
+}
+.bootstrap-frm h1>span {
+    display: block;
+    font-size: 10px;
+}
+.bootstrap-frm label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.bootstrap-frm label>span {
+    float: left;
+	width: 20%;
+    text-align: left;
+    padding-right: 10px;
+    margin-top: 5px;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+#num1,#num2{
+	 border: 1px solid #CCC;
+    color: #888;
+    height: 28px;
+	line-height:15px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 17%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;    
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	}
+#num3{
+	border: 1px solid #CCC;
+    color: #888;
+    height: 28px;
+	line-height:15px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 20%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;    
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	}
+.bootstrap-frm input[type="text"], .bootstrap-frm input[type="email"], .bootstrap-frm textarea, .bootstrap-frm select{
+    border: 1px solid #CCC;
+    color: #888;
+    height: 30px;
+	line-height:12px;
+    margin-bottom: 7px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 60%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;    
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.bootstrap-frm select {
+    background: #FFF url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right;
+    appearance:none;
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 62%;
+    height: 35px;
+	line-height:15px;
+}
+.bootstrap-frm textarea{
+
+	padding: 5px 0px 0px 5px;
+	width: 60%;
+}
+.bootstrap-frm .button {
+	
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px 25px 10px 25px;
+    color: #333;
+    border-radius: 4px;
+	margin-left:100px;
+}
+.bootstrap-frm .button:hover {
+    color: #333;
+    background-color: #EBEBEB;
+    border-color: #ADADAD;
+}
+
+#sialogo{
+	margin-top:3px;
+	float:left;}
+#leftcolumn{
+	width:50%;
+	float:left;}
+#rightcolumn{
+	width:50%;
+	float:right;}
+#clear{
+	clear:both;;}
+.login-help {
+  margin: 20px 0;
+  font-size: 11px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px #2a85a1;
+}
+.login-help a {
+  color: #cce7fa;
+  text-decoration: none;
+}
+.login-help a:hover {
+  text-decoration: underline;
+}
+
+

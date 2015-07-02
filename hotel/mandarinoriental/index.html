@@ -1,0 +1,1012 @@
+<html  lang="zh-TW">
+<head>
+<title>大登旅遊-台北文華東方酒店</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="/css/jquery-ui-1.10.0.custom.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/form_style.css" />
+<link rel="stylesheet" type="text/css" href="css/style3.css" />
+
+
+
+<style>
+body{
+	padding:0;
+	margin:0;
+	background:#000;
+	
+	background: #100900;}
+iframe{
+	z-index:100;}
+img{
+	border:0;}
+#head{
+	position:fixed;
+	height:64px;
+	width:100%;
+	border-bottom:#fff solid 3px;
+	background-color:#379ac1;
+	z-index:999;}
+#icon{width:1100px;
+    height:64px;
+	margin-left:auto;
+	margin-right:auto;}
+#container{
+	padding-top:67px;
+	width:1100px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+#slideshow {
+    position:fixed;
+    height:516px;
+	margin-left:100px;
+	z-index:-100;
+}
+
+#slideshow DIV {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+    height: 516px;
+    background-color: #FFF;
+}
+
+#slideshow DIV.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow DIV.last-active {
+    z-index:9;
+}
+
+#slideshow DIV IMG {
+    height: 516px;
+    display: block;
+    border: 0;
+
+}
+.sec1{
+
+	background:url(images/index2_02.png) repeat-y;
+	width:1100px;
+	height:250px;
+	text-align:center;
+	margin-left:auto;
+	martgin-right:auto;
+	
+}
+.sec3{
+
+	background:url(images/index2_02.png) repeat-y;
+	width:1100px;
+	height:500px;
+	text-align:center;
+	margin-left:auto;
+	martgin-right:auto;
+	
+}
+.sec2{
+
+	background:url(images/index2_02.png) repeat;
+	width:1100px;
+	height:400px;
+	margin-left:auto;
+	martgin-right:auto;
+	text-align:center;
+}
+.sec1 img{
+	background:#100900;
+	margin-right:50px;
+	margin-top:35px;
+	vertical-align:middle;}
+.button {
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  background: #28becb;
+  border: none;
+  border-radius: 3px;
+
+  color: #fff;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+ 
+  cursor: pointer;
+}
+.button1 {
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  background: #F33258;
+  border: none;
+  border-radius: 3px;
+
+  color: #fff;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+ 
+  cursor: pointer;
+}
+.redbutton{
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  background: #F33258;
+  border: none;
+  border-radius: 3px;
+
+  color: #fff;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+ 
+  cursor: pointer;
+}
+a{color:#68c7cf;
+  -webkit-transition: color 500ms ;
+    -moz-transition: color 500ms ;
+    -o-transition: color 500ms ;
+    transition: color 500ms ;
+}
+a:link{
+  text-decoration:none;
+  color:#68c7cf;}
+a:hover{
+  color:#fff;}
+h2{
+  color:#b9ebef;
+  font-size:12px;
+  margin-top:0;
+}
+h4{
+  padding-top:0;
+  margin-top:0;
+  font-size:15px;
+  text-shadow: 2px 2px #083e43;
+  }
+ul{
+  margin-left:0;
+  padding-left:10px;
+  list-style-type:none;}
+#content{
+  width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;}
+#header{
+  width:1000px;
+  height:694px;
+  background:url(../images/index.png);
+  background-repeat:no-repeat;
+  }
+.apDiv1 {
+  position: absolute;
+  width: 200px;
+  height: 115px;
+  bottom:170px;
+  left:70px;
+  z-index: 1;
+   display: inline-block;
+  
+}
+.apDiv2 {
+  position: absolute;
+  width: 200px;
+  height: 115px;
+  bottom:110px;
+  left:230px;
+  z-index: 1;
+  display: inline-block;
+}
+
+.apDiv3 {
+  position: absolute;
+  width: 200px;
+  height: 115px;
+  bottom:215px;
+  left:380px;
+  z-index: 1;
+  display: inline-block;
+}
+
+.apDiv4 {
+  position: absolute;
+  width: 200px;
+  height: 115px;
+  bottom:125px;
+  right:230px;
+  z-index: 1;
+  display: inline-block;
+}
+
+.apDiv5 {
+  position: absolute;
+  width: 200px;
+  height: 115px;
+  bottom:250px;
+  right:30px;
+  z-index: 1;
+  display: inline-block;
+}
+
+.apDiv6 {
+  position: absolute;
+  width: 200px;
+  height: 115px;
+  bottom:100px;
+  left:790px;
+  z-index: 1;
+  display: inline-block;
+}
+#cat{
+  width:1000px;
+margin-left:auto;
+margin-right:auto;
+background:#FFF;
+border:#2298a2 solid 7px;
+}
+
+.menu{
+  width:880px;
+  height:auto;
+  margin-bottom: 5px;
+  text-align: center;
+}
+#apDiv7{
+  width:900px;
+  margin-left:auto;
+  margin-right:auto;
+  position:absolute;
+  margin-top:602px;
+  padding-left:50px;
+}
+#footer{
+  width:100%;
+  height:460px;
+  
+  background:#155D63;
+ 
+  position:relative;}
+#footer-inner{
+  width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:20px;
+  
+  color:#68c7cf;
+  font-size:12px;
+}
+#footer-inner1{
+  width:280px;
+  height:210px;
+  float:left;
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-left:10px;
+  margin-right:1px;
+  padding-right:30px;
+  border-right:09454a 1px solid;
+  }
+#footer-inner2{
+  width:350px;
+  height:210px;
+  float:left;
+  margin-top:10px;
+  margin-bottom:10px;
+  
+
+  padding-right:30px;
+  padding-left:30px;
+  border-right:09454a 1px solid;
+  border-left:#888888 1px solid;}
+#footer-inner3{
+  width:200px;
+  height:210px;
+  float:left;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding-left:30px;
+  border-left:#888888 1px solid;}
+.footer-hottravel{
+  width:100px;
+  height:210;
+  float:left;
+  margin-right:10px;
+
+  }
+#footer-down{
+  clear:both;
+  width:100%;
+  height:190px;
+  background:#092629;
+  position:absolute;
+  bottom:0;
+  color:#FFF;}
+
+#footer-innertext{
+  width:1000px;
+  height:18px;
+  color:#fff;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:5px;
+  font-size:14px;
+  }
+#footer-innertext ul{
+  list-style-type:none;
+  }
+#footer-innertext ul li{
+    float:left;
+  margin-right:22px;
+}
+#footer-innertext ul li a{
+  color:#fff;
+  text-shadow: 2px 2px #000;
+  -webkit-transition: text-shadow 500ms ;
+    -moz-transition: text-shadow 500ms ;
+    -o-transition: text-shadow 500ms ;
+    transition: text-shadow 500ms ;}
+#footer-innertext ul li a:hover{
+  text-shadow: 2px 2px #000;}
+.apDiv{
+     cursor:pointer;
+     -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+.apDiv:hover, .apDiv:focus, .spDiv:active {
+ -webkit-transform: scale(1.1) );
+  transform: scale(1.1) ;
+}
+a:visited {
+  text-decoration: none;
+  color: #68c7cfl;
+}
+a:hover {
+  text-decoration: none;
+  color: #68c7cfl;
+}
+a:active {
+  text-decoration: none;
+  color: #68c7cfl;
+}
+#rightreserve{
+  position:absolute;
+  bottom:0;
+  height:27px;
+  
+  line-height:25px;
+  width:100%;
+  background:#000;
+  color:#fff;
+  clear:both;
+  
+  margin-left:auto;
+  margin-top:auto;
+  border-top: #333 1px solid;
+  }
+#righttext{
+  color:#999;
+  text-shadow:#CCC;
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:9px;
+  width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:18px;}
+#contact{
+  line-height:17px;
+  color:#b9b9b9;
+  clear:both;
+  padding-top:15px;
+  margin-left:10px;
+  }
+
+  .apDiv{
+     cursor:pointer;
+     -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+.apDiv:hover, .apDiv:focus, .spDiv:active {
+ -webkit-transform: scale(1.1) );
+  transform: scale(1.1) ;
+}
+#back-top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+
+}
+
+#back-top a {
+  width: 69px;
+  display: block;
+  text-align: center;
+  font: 11px/100% Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #bbb;
+
+  /* transition */
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+}
+#back-top a:hover {
+  color: #000;
+}
+
+/* arrow icon (span tag) */
+#back-top span {
+  width: 69px;
+  height: 69px;
+  display: block;
+  margin-bottom: 7px;
+  background: #ddd url(../images/top.png) no-repeat center center;
+
+  /* rounded corners */
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+
+  /* transition */
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+}
+#back-top a:hover span {
+  background-color: #777;
+}
+#left_side{
+  position: fixed;
+  top: 200px;
+  left: 20px;
+  z-index: 5;
+}
+#hide_left_side{
+  position: absolute;
+  left:130px;
+  cursor: pointer;
+  transform: rotateY(0deg);
+}
+#side {
+  position: absolute;
+  top:10px;
+  z-index: 5;
+}
+#side span{
+  width:120px;
+  height: 308px;
+  display:block;
+  background: url(../images/discount1_01.png) no-repeat center center;
+}
+
+#side1 {
+  position: absolute;
+  top:320px;
+  z-index: 5;
+}
+#side1 span{
+  width:120px;
+  height: 172px;
+  display:block;
+  background: url(../images/discount1_01_02.png) no-repeat center center;
+}
+#footer-bonus{
+	width:auto;
+	height:370px;
+	margin-top:200px;
+	margin-bottom:-100px;
+	padding-top:5px;
+	background:#b8d446;}
+
+h1{
+	color:#FFF;
+	margin-bottom:8px;}
+	
+.red{
+	color:#A20000;
+	font-weight:bold;}
+p{
+	color:#000;}
+.footer-bonus-itemcontainer{
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;}
+	
+.footer-bonus-item{
+	display:inline;
+	float:left;
+	background:#FFF;
+	width:300px;
+	height:200px;
+	margin-left:10px;
+	padding:10px;
+	border:#e8f6ae solid 10px;
+}
+.footer-bonus-item3{
+	display:inline;
+	float:left;
+	background:#FFF;
+	width:450px;
+	height:200px;
+	margin-left:10px;
+	padding:10px;
+	border:#e8f6ae solid 10px;
+}
+h3{
+    margin-top:5px;
+	margin-bottom:5px;
+	text-align:center;
+	color:#A00E24;}
+.footer-bonus-item p{
+	font:"微軟正黑體";
+	font-size:13px;}
+.footer-bonus-item3 p{
+	font:"微軟正黑體";
+	font-size:13px;}
+.tip {
+	color: #fff;
+	background:#1d1d1d;
+	display:none; /*--Hides by default--*/
+	padding:10px;
+	position:absolute;	z-index:1000;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.tip img{
+	margin-bottom:10px;}
+
+.roomdescribe{
+	font-size:11px;
+	color:#FFF;
+	}
+strong{
+	color: #C93;}
+}
+.bottomline img{
+  margin-bottom: -4px;
+}
+</style>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Save for Web Slices (index.psd) -->
+<div id="head"><div id="icon"><a href="http://www.martin.com.tw" target="_blank"><img src="images/title.png" width="192" height="64"></a></div></div>
+<div id="container">
+
+<div id="maincontainer">
+<div id="slideshow">
+    <div class="active">
+        <a href="#"><img src="images/1.jpg" alt="Slideshow Image 1" /></a>
+        
+    </div>
+    
+    <div>
+        <a href="#"><img src="images/2.jpg" alt="Slideshow Image 2" /></a>
+        
+    </div>
+    
+    <div>
+        <a href="#"><img src="images/3.jpg" alt="Slideshow Image 3" /></a>
+       
+    </div>
+    <div>
+        <a href="#"><img src="images/4.jpg" alt="Slideshow Image 3" /></a>
+    
+    </div>
+    <div>
+        <a href="h#"><img src="images/5.jpg" alt="Slideshow Image 3" /></a>
+        
+    </div>
+   
+    
+</div>
+<img src="images/index2_01.png" width="1100" height="477"><!-- End Save for Web Slices -->
+<div class="sec1"><a class='trigger-overlay' href='#'><img src="images/gift.png" width="378" height="196"></a></div>
+<div class="bottomline"><img src="images/index2_03.png" width="1100" height="110"></div>
+<div class="sec3"><img src="images/room.png" width="859" height="477"></div>
+<div class="bottomline"><img src="images/index2_03.png" width="1100" height="110"></div>
+<div class="sec3"><img src="images/room2.png" width="859" height="477"></div>
+<div class="bottomline"><img src="images/index2_03.png" width="1100" height="110"></div>
+<div class="sec3"><a class='trigger-overlay' href='#'><img src="images/room3.png" width="859" height="510"></a></div>
+<div class="bottomline"><img src="images/index2_03.png" width="1100" height="110"></div>
+
+<div class="sec2"><iframe width="640" height="360" src="http://www.youtube.com/embed/3LriTGwe5SY?list=PL1B3A348C907275F8&amp;controls=0&amp;showinfo=0&autoplay=1 " frameborder="0" allowfullscreen></iframe></div>
+<div class="bottomline"><img src="images/index2_03.png" width="1100" height="110"></div>
+</div>
+<!--maincontainer-->
+</div>
+
+<!--overlay-->
+<div class="overlay overlay-slidedown">
+      <button type="button" class="overlay-close">Close</button>
+      <nav>
+  
+  <img src="img/logo.png" width="848" height="46" />
+<form action="" method="post" class="bootstrap-frm" id='data_form'>
+      <input type='hidden' id='pdt_num' name='pdtnum' value='IM1412030351'>
+      <input type='hidden' id='subject' name='subject' value='文華東方'>
+      <h1>台北文華東方酒店 飯店需求單
+        <span></span>
+       </h1>
+        <div id="leftcolumn">
+        <label>
+          <span>身份 :</span>
+          <select id='iden'>
+            <option value ="">請選擇身份▼</option>
+            <option value ="agent">旅行社</option>
+            <option value ="normal">一般住客</option>
+          </select>
+        </label>
+        <label id='name_label' style='display:none;'>
+            <span>住客姓名 :</span>
+            <input id="name" type="text" name="name"  placeholder="Same as passport or ID if you are Taiwanese" />
+        </label>
+        <label id='agent_name_label' style='display:none;'>
+            <span>旅行社名稱(連絡人) :</span>
+            <input id="agent_name" type="text" name="agent_name" />
+        </label>
+    
+        <label>
+            <span>Email :</span>
+            <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+        </label>
+        <label>
+            <span id='span_phone'>電話 :</span>
+            <input id="phone" type="text" name="phone" placeholder="Phone Number" />
+        </label>
+        <label>
+        <span>入住日期 :</span>
+        <p><input type="text" id="start" name='start'></p>
+        </label>     
+       <label>
+        <span>退房日期 :</span>
+        <p><input type="text" id="end" name='end'></p>
+        </label>     
+       
+         
+       
+        </div>
+        <div id="rightcolumn">
+        <label>
+        <span>入住房型 :</span>
+        <select name="room">
+　         <option value="seletion">請選擇以下房型▼</option>
+　         <option value="deluxeroom">豪華客房(Deluxe Room)NT$19000</option>
+　         <option value="mandarinroom">文華客房(Mandarin Room)NT$20000</option>
+        </select>
+        </label>
+    
+        <label>
+        
+            <span>人數 :</span>
+            <input  id="num1" type="text" name="num1" placeholder="大人" />
+            <input  id="num2" type="text" name="num2" placeholder="小孩" />
+            <input  id="num3" type="text" name="num3" placeholder="需要照護人士" />
+        </label>
+        <label>
+        <span>半日遊行程 :</span>
+        <select name="tour">
+　         <option value="seletion">請選擇以下行程(三選一)▼</option>
+　         <option value="台北市區觀光">1.台北市區觀光</option>
+　         <option value="半日基隆港、野柳、北海岸公園觀光">2.半日基隆港、野柳、北海岸公園觀光 </option>
+　         <option value="民俗藝術觀光">3.民俗藝術觀光</option>
+        </select>
+        </label>
+    
+        <label>
+            <span>其他需求 :</span>
+            <textarea id="ext" name="ext" placeholder="Your Message to Us" style="width:270px; height:140px;"></textarea>
+        </label> 
+        
+        
+        </div>    
+        
+       <div id="clear"></div>
+         
+    </form>
+    <label>
+            <span id='loading' style='display:none;'>正在為您傳送資料，請稍候...</span>
+            <input type="button" class="button" id='send_require' value="寄出" /> 
+    </label> 
+    <div class="login-help">
+      <p>大登旅行社 台北服務電話:886-2-5582-5517 &nbsp&nbsp&nbsp E-mail: reservation@martin.com.tw</p>
+    </div>
+    </nav>
+    
+</div>
+<!--overlay-->
+
+<div id="footer">
+
+ <div id="footer-inner">
+  <div id="footer-inner1">
+    <h4>關於大登旅遊</h4>
+    <img src="images/logo.png" width="130" height="27"><br><br>
+    在觀光業發達的現代社會裡，旅行社多如過江之鯽。但各公司服務品質良莠不齊，消費者往往無所適從。本公司創辦人林博宗先生有鑑於此，乃以個人服務旅遊業界數十年的豐富經驗結合業界菁英創設大登旅行社，決心開啟觀光業的另一扇窗，銳意革新，全新出發，以謀求讓「愛旅遊的消費者」擁有最滿意的笑容為志業。
+  </div>
+  <!--footer-inner1-->
+
+  <div id="footer-inner2">
+    <h4>熱門行程</h4>
+     <div class="footer-hottravel">
+      <h2>豪華郵輪假期</h2>
+      <ul>
+        <li><a href="http://www.martin.com.tw/cruise/star/" target="_blank">麗星郵輪</a></li>
+        <li><a href="http://www.martin.com.tw/cruise/ncl/" target="_blank">NCL挪威郵輪</a></li>
+        <li><a href="http://www.martin.com.tw/cruise/msc/" target="_blank">MSC地中海郵輪</a></li>
+      </ul>
+      <h2>新航假期</h2>
+      <ul>
+        <li><a href="http://sia.martin.com.tw/sia_list.php?area=%E6%96%B0%E5%8A%A0%E5%9D%A1%E4%B8%BB%E9%A1%8C" target="_blank">新加坡主題之旅</a></li>
+        <li><a href="http://sia.martin.com.tw/sia_list.php?area=%E5%A4%A7%E6%B4%8B%E6%B4%B2%E4%B8%BB%E9%A1%8C" target="_blank">大洋洲主題之旅</a></li>
+        <li><a href="http://sia.martin.com.tw/sia_list.php?area=%E6%AD%90%E6%B4%B2%E4%B8%BB%E9%A1%8C" target="_blank">歐洲系列假期</a></li>
+      </ul>
+     </div>
+     <div class="footer-hottravel">
+     <h2>新航歐洲團體</h2>
+      <ul>
+        <li><a href="http://www.martin.com.tw/product/%E7%91%9E%E5%A3%AB/list/group/" target="_blank">瑞士</a></li>
+        <li><a href="http://www.martin.com.tw/product/%E7%BE%A9%E5%A4%A7%E5%88%A9/list/group/" target="_blank">義大利</a></li>
+        <li><a href="http://www.martin.com.tw/product/PD1409120295/info/" target="_blank">法國</a></li>
+        <li><a href="http://www.martin.com.tw/product/%E4%BF%84%E7%BE%85%E6%96%AF/list/group/" target="_blank">俄羅斯</a></li>
+      </ul>
+     </div>
+     <div class="footer-hottravel">
+     <h2>海島度假</h2>
+      <ul>
+        <li><a href="http://www.martin.com.tw/island/maldives/" target="_blank">馬爾地夫</a></li>
+        <li><a href="http://www.martin.com.tw/island/seychelles/" target="_blank">賽席爾</a></li>
+        <li><a href="http://www.martin.com.tw/island/mau/" target="_blank">模里西斯</a></li>
+      </ul>
+        <h2>Club Med</h2>
+        <ul>
+        <li><a href="http://www.martin.com.tw/product/%E7%9F%B3%E5%9E%A3%E5%B3%B6/list/ClubMed/" target="_blank">石垣島</a></li>
+        <li><a href="http://www.martin.com.tw/product/%E5%8D%A1%E5%B0%BC%E5%B3%B6/list/ClubMed/" target="_blank">卡尼島</a></li>
+        <li><a href="http://www.martin.com.tw/product/%E6%A8%A1%E9%87%8C%E8%A5%BF%E6%96%AF/list/ClubMed/" target="_blank">愛比昂</a></li>
+      </ul>
+     </div>
+  </div>
+  <!--footer-inner1-->
+  <div id="footer-inner3">
+      <h4>掃掃QR看優惠</h4>
+    <img src="images/140712100004.png" width="132" height="132"> 
+    <p><div class="fb-like" data-href="https://www.facebook.com/martinfans" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div></p>
+    
+  </div>
+  <!--footer-inner1-->
+  </div>
+  <!--footer-inner-->
+  <div id="footer-down">
+  <div id="footer-innertext">
+  <ul>
+    <li><a href="http://sia.martin.com.tw/" target="_blank">新航假期</a></li>
+    <li><a href="http://www.martin.com.tw/cruise/star/" target="_blank">麗星郵輪</li>
+    <li><a href="http://www.martin.com.tw/action/about/" target="_blank">公司簡介</li>
+    <li><a href="https://www.facebook.com/martinfans" target="_blank">Fb粉絲團</a></li>
+   </ul>
+   
+<div id="contact">大登旅行社股份有限公司(交觀甲0997 品保北0544)<br>
+台北總公司台北市中山區松江路146號8樓之三&nbsp;&nbsp;&nbsp;  Tel：(02)2568-3028&nbsp;&nbsp;&nbsp; Fax：(02)2581-5150<br>
+台中分公司台中市忠明南路303號11樓之4&nbsp;&nbsp;&nbsp;  Tel : (04)3500-2289&nbsp;&nbsp;&nbsp; Fax:(04)3500-2255<br>
+高雄分公司高雄市新興區民生一路56號3樓之5&nbsp;&nbsp;&nbsp;  (07)951-1858&nbsp;&nbsp;&nbsp; Fax:(07)222-7536</div>
+ 
+  </div>
+  <!--footer-innertext-->
+  <div id="rightreserve"><div id="righttext">Copyright © 2014 Martin Travel Service All Rights Reserved. Developed by Martin Travel Service.CO.,LTD.</div></div>
+  </div>
+</body>
+<script src="/libs/js/jquery-1.10.2.min.js"></script>
+<script src="/libs/js/jquery-ui-1.10.3.custom.min.js" ></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/classie.js"></script>
+<script>
+
+$.datepicker.regional['zh-TW'] = {
+  dayNames: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+  dayNamesMin: ["日", "一", "二", "三", "四", "五", "六"],
+  monthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+  monthNamesShort: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+  prevText: "上月",
+  nextText: "次月",
+  weekHeader: "週"
+};
+
+$.datepicker.setDefaults($.datepicker.regional["zh-TW"]);
+$("#start").datepicker({changeYear: true, changeMonth: true, yearRange: "+0:+2", dateFormat: "yy-mm-dd", minDate: 0});
+$("#end").datepicker({changeYear: true, changeMonth: true, yearRange: "+0:+2", dateFormat: "yy-mm-dd", minDate: 0});
+
+
+setInterval( "slideSwitch()", 2500 );
+
+function slideSwitch() {
+    var $active = $('#slideshow DIV.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow DIV:last');
+
+    // use this to pull the divs in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow DIV:first');
+
+    // uncomment below to pull the divs randomly
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+
+$(".tip_trigger").hover(function(){
+    tip = $(this).find('.tip');
+    tip.show(); //Show tooltip
+  }, function() {
+    tip.hide(); //Hide tooltip      
+  }).mousemove(function(e) {
+    var mousex = e.pageX + 20; //Get X coodrinates
+    var mousey = e.pageY + 20; //Get Y coordinates
+    var tipWidth = tip.width(); //Find width of tooltip
+    var tipHeight = tip.height(); //Find height of tooltip
+    
+    //Distance of element from the right edge of viewport
+    var tipVisX = $(window).width() - (mousex + tipWidth);
+    //Distance of element from the bottom of viewport
+    var tipVisY = $(window).height() - (mousey + tipHeight);
+      
+    if ( tipVisX < 20 ) { //If tooltip exceeds the X coordinate of viewport
+      mousex = e.pageX - tipWidth - 20;
+    } if ( tipVisY < 20 ) { //If tooltip exceeds the Y coordinate of viewport
+      mousey = e.pageY - tipHeight - 20;
+    } 
+    tip.css({  top: mousey, left: mousex });
+  });
+
+//需求單談出
+ var overlay = document.querySelector( 'div.overlay' ),
+    closeBttn = overlay.querySelector( 'button.overlay-close' );
+    transEndEventNames = {
+      'WebkitTransition': 'webkitTransitionEnd',
+      'MozTransition': 'transitionend',
+      'OTransition': 'oTransitionEnd',
+      'msTransition': 'MSTransitionEnd',
+      'transition': 'transitionend'
+    },
+    transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+    support = { transitions : Modernizr.csstransitions };
+
+  function toggleOverlay() {
+    if( classie.has( overlay, 'open' ) ) {
+      classie.remove( overlay, 'open' );
+      classie.add( overlay, 'close' );
+      var onEndTransitionFn = function( ev ) {
+        if( support.transitions ) {
+          if( ev.propertyName !== 'visibility' ) return;
+          this.removeEventListener( transEndEventName, onEndTransitionFn );
+        }
+        classie.remove( overlay, 'close' );
+      };
+      if( support.transitions ) {
+        overlay.addEventListener( transEndEventName, onEndTransitionFn );
+      }
+      else {
+        onEndTransitionFn();
+      }
+    }
+    else if( !classie.has( overlay, 'close' ) ) {
+      classie.add( overlay, 'open' );
+    }
+  }
+
+  $('a.trigger-overlay').bind('click',function(){
+    $('#head').hide();
+    toggleOverlay();
+    return false;
+  });
+
+    $('.overlay-close').bind('click',function(){
+    toggleOverlay();
+    $('#head').show();
+    });
+//需求單關閉
+
+
+   $('#send_require').bind('click',function(){
+    var name = $("#name"), email = $("#email"), phone = $('#phone'),agent_name=$('#agent_name');
+    if((name.val()=='' && agent_name.val()=='') || email.val()=='' || phone.val()==''){
+      alert('請檢查輸入的資料是否正確');
+      return false;
+    }
+    var bValid = true;
+    bValid = bValid && checkLength(email, "信箱", 6, 80);
+    bValid = bValid && checkRegexp(email, /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i, "eg. example@martin.com");
+    if (bValid) {
+      var $form = $('#data_form');
+      var $submit = $('.button');
+      $.ajax({
+        url: "/libs/functions/inbound_ajax.php",
+        data: $form.serialize(),
+        type: "post",
+        dataType: "text",
+        beforeSend: function() {
+          $submit.hide();
+          $('#loading').show();
+        },
+        success: function(data) {
+          $submit.show();
+          if (data == "error2") {
+            alert("填寫完整資料").show();
+          } else if (data == "error1") {
+            alert("發生錯誤，請檢查資料是否正確").show();
+          } else if (data == "ok") {
+            $('#loading').hide();
+            alert("填寫完成！感謝您的報名！我們將有專人與您聯絡！");
+            toggleOverlay();
+          } else {
+            alert(data);
+          }
+        }
+      });
+
+    }
+
+    return false;
+  });
+
+function checkLength(o, n, min, max) {
+            if (o.val().length > max || o.val().length < min) {
+                o.addClass("ui-state-error");
+                updateTips(n + "的字數需介於" + min + "~" + max + "字之間");
+                return false
+            } else {
+                return true
+            }
+        }
+function checkRegexp(o, regexp, n) {
+      if (!(regexp.test(o.val()))) {
+          o.addClass("ui-state-error");
+          updateTips(n);
+          return false
+      } else {
+          return true
+      }
+  }
+
+$('#iden').on('change',function(){
+  var iden = $('#iden').val();
+  if(iden=='normal'){
+    $('#span_phone').html('電話：');
+    $('#agent_name').val('');
+    $('#agent_name_label').hide();
+    $('#name_label').show();
+  }else if(iden=='agent'){
+    $('#span_phone').html('聯絡人電話：');
+    $('#name').val('');
+    $('#name_label').hide();
+    $('#agent_name_label').show();
+  }else{
+    $('#agent_name').val('');
+    $('#name').val('');
+    $('#name_label').hide();
+    $('#agent_name_label').hide();
+  }
+});
+
+</script>
+</html>
