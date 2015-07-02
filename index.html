@@ -6,10 +6,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	
-  	
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style --> 	
 	<title>大登旅遊 - 遊台灣</title>
+
 	<style>
 		#logo{
 			cursor:pointer;
@@ -17,10 +16,61 @@
 		.link_martin{
 			color:#001960;
 		}
+		@-webkit-keyframes loading {
+			from {
+				-webkit-transform: rotate(0deg);
+			}
+			to {
+				-webkit-transform: rotate(360deg);
+			}
+		}
+		@-moz-keyframes loading {
+			from {
+				-moz-transform: rotate(0deg);
+			}
+			to {
+				-moz-transform: rotate(360deg);
+			}
+		}
+		@-o-keyframes loading {
+			from {
+				-o-transform: rotate(0deg);
+			}
+			to {
+				-o-transform: rotate(360deg);
+			}
+		}
+		@keyframes loading {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+		.div_loading{
+			position: relative;
+			height:100px;
+			width:100px;
+			margin:auto;
+		}
+		.loading {
+			border: 15px solid #349FC9;
+			border-right: 15px solid #9DD4F6;
+			border-bottom: 15px solid #9DD4F6;
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			-webkit-animation: loading 1s infinite linear;
+			-moz-animation: loading 1s infinite linear;
+			-o-animation: loading 1s infinite linear;
+			animation: loading 1s infinite linear;
+		}
 	</style>
 </head>
 <body>
 
+	
 
 	<header class="cd-header">
 		<div id="logo"><span></span></div>
@@ -47,6 +97,10 @@
 		</div> <!-- cd-tab-filter-wrapper -->
 
 		<section class="cd-gallery">
+			<div class='div_loading'>
+				<div class="loading"></div>
+				<div class="word"></div>
+			</div>
 			<ul>
 			</ul>
 			<div class="cd-fail-message">抱歉，搜尋不到您想要的行程，請洽詢我們的業務專員。</div>
@@ -166,7 +220,8 @@
 		 for(i=0;i<=2;i++){
 			$('.cd-gallery ul').append('<li class="gap"></li>');
 		 }
-		 $('#all_product').trigger('click');
+		 $('#all_product').trigger('click')
+		 $('.div_loading').fadeOut();
     });
 
 	/*$('#logo').bind('click',function(){
