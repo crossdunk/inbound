@@ -6,9 +6,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style --> 	
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	
+  	
 	<title>大登旅遊 - 遊台灣</title>
-
 	<style>
 		#logo{
 			cursor:pointer;
@@ -16,61 +17,12 @@
 		.link_martin{
 			color:#001960;
 		}
-		@-webkit-keyframes loading {
-			from {
-				-webkit-transform: rotate(0deg);
-			}
-			to {
-				-webkit-transform: rotate(360deg);
-			}
-		}
-		@-moz-keyframes loading {
-			from {
-				-moz-transform: rotate(0deg);
-			}
-			to {
-				-moz-transform: rotate(360deg);
-			}
-		}
-		@-o-keyframes loading {
-			from {
-				-o-transform: rotate(0deg);
-			}
-			to {
-				-o-transform: rotate(360deg);
-			}
-		}
-		@keyframes loading {
-			from {
-				transform: rotate(0deg);
-			}
-			to {
-				transform: rotate(360deg);
-			}
-		}
-		.div_loading{
-			position: relative;
-			height:100px;
-			width:100px;
-			margin:auto;
-		}
-		.loading {
-			border: 15px solid #349FC9;
-			border-right: 15px solid #9DD4F6;
-			border-bottom: 15px solid #9DD4F6;
-			height: 100px;
-			width: 100px;
-			border-radius: 50%;
-			-webkit-animation: loading 1s infinite linear;
-			-moz-animation: loading 1s infinite linear;
-			-o-animation: loading 1s infinite linear;
-			animation: loading 1s infinite linear;
+		.mix img{
+			cursor:pointer;
 		}
 	</style>
 </head>
 <body>
-
-	
 
 	<header class="cd-header">
 		<div id="logo"><span></span></div>
@@ -85,22 +37,18 @@
 					</li> 
 					<li class="filter"><a id='all_product' class="selected" href="#0" data-type="all">All</a></li>
 					<!--<li class="filter" data-filter=".pro"><a href="#0" data-type="pro">旅展好康</a></li>-->
-					<li class="filter" data-filter=".2d"><a href="#0" data-type="group">兩天一夜</a></li>
-					<li class="filter" data-filter=".3d"><a href="#0" data-type="eufit">三天兩夜</a></li>
-					<li class="filter" data-filter=".4d"><a href="#0" data-type="sinfit">四天三夜</a></li>
-					<li class="filter" data-filter=".5d"><a href="#0" data-type="resort">五天四夜</a></li>
-					<li class="filter" data-filter=".6d"><a href="#0" data-type="cruise">六天五夜</a></li>
+					<li class="filter" data-filter=".2d"><a href="#0" data-type="group">兩天</a></li>
+					<li class="filter" data-filter=".3d"><a href="#0" data-type="eufit">三天</a></li>
+					<li class="filter" data-filter=".4d"><a href="#0" data-type="sinfit">四天</a></li>
+					<li class="filter" data-filter=".5d"><a href="#0" data-type="resort">五天</a></li>
+					<li class="filter" data-filter=".6d"><a href="#0" data-type="cruise">六天</a></li>
 					<li class="filter" data-filter=".allisland"><a href="#0" data-type="bank">環島行程</a></li>
-					<li class="filter" data-filter=".customized"><a href="#0" data-type="bank">客製化行程</a></li>
+					<li class="filter" data-filter=".customized"><a target='_blank' href="http://www.martin.com.tw/product/IM1507230446/order/" data-type="bank">客製化行程</a></li>
 				</ul> <!-- cd-filters -->
 			</div> <!-- cd-tab-filter -->
 		</div> <!-- cd-tab-filter-wrapper -->
 
 		<section class="cd-gallery">
-			<div class='div_loading'>
-				<div class="loading"></div>
-				<div class="word"></div>
-			</div>
 			<ul>
 			</ul>
 			<div class="cd-fail-message">抱歉，搜尋不到您想要的行程，請洽詢我們的業務專員。</div>
@@ -137,9 +85,9 @@
 						<div class="cd-select cd-filters">
 							<select class="filter" name="selectThis" id="selectThis">
 								<option value="">請選擇地點</option>
-								<option value=".eu">西岸行程</option>
-								<option value=".sa">東岸行程</option>
-								<option value=".esa">城市旅遊</option>
+								<option value=".west">西岸行程</option>
+								<option value=".east">東岸行程</option>
+								<option value=".city">城市旅遊</option>
 							</select>
 						</div> <!-- cd-select -->
 					</div> <!-- cd-filter-content -->
@@ -173,7 +121,6 @@
 						</li>
 					</ul> 
 				</div>  -->
-
 			</form>
 
 			<a href="#0" class="cd-close">Close</a>
@@ -192,25 +139,25 @@
 <script src="js/modernizr.js"></script> <!-- Modernizr -->
 <script>
 	$url = "http://www.martin.com.tw/inbound/getProduct.php?callback=?";
-	$.getJSON($url, {keyword: '新航假期'},
+	$.getJSON($url, {keyword: '來台旅遊'},
 		function(product_data) {
 			var content_text = '';
 			$.each(product_data, function(key, val) {
 				var str = val.pdt_keyword;
-				content_text += ' <li class="mix '+ str.replace(/,/g, " ") +'">';
-				content_text += ' <img src="http://www.martin.com.tw/'+ val.pdt_img +'" alt="'+ val.pdt_title +'">';
+				content_text += ' <li class="mix '+ str.replace(/,/g, " ") +'" >';
+				content_text += ' <a target="_blank" href="http://www.martin.com.tw/product/'+ val.pdt_num +'/info/"><img src="http://www.martin.com.tw/'+ val.pdt_img +'" alt="'+ val.pdt_title +'"></a>';
 				content_text += ' <h2>'+ val.pdt_subject +'</h2>';
 				content_text += ' <p>'+ val.pdt_title +'</p>';
 				content_text += ' <h3 class="price">'+ val.pdt_price +'</h3>';
-				content_text += ' <div class="hoverdes">';
-				content_text += ' <div class="hoverdeswrapper">';
-				content_text += ' <h2>旅展優惠</h2>';
-				content_text += ' <h4 class="describe">幽會幽會優惠喔</h4>';
-				content_text += ' <h2>出發日期</h2>';
-				content_text += ' <h4 class="date">10/7</h4>';
-				content_text += ' <button class="link_btn button button--isi button--border-thick button--round-l button--size-s" alt="http://www.martin.com.tw/product/'+ val.pdt_num +'/info/"><i class="button__icon icon icon-forward"></i><span>詳細介紹</span></button>';
-				content_text += ' </div>';
-				content_text += ' </div>';
+				//content_text += ' <div class="hoverdes">';
+				//content_text += ' <div class="hoverdeswrapper">';
+				//content_text += ' <h2>旅展優惠</h2>';
+				//content_text += ' <h4 class="describe">幽會幽會優惠喔</h4>';
+				//content_text += ' <h2>出發日期</h2>';
+				//content_text += ' <h4 class="date">10/7</h4>';
+				//content_text += ' <button class="link_btn button button--isi button--border-thick button--round-l button--size-s" alt="http://www.martin.com.tw/product/'+ val.pdt_num +'/info/"><i class="button__icon icon icon-forward"></i><span>詳細介紹</span></button>';
+				//content_text += ' </div>';
+				//content_text += ' </div>';
 				content_text += ' </li>';
 
              content_text += '';
@@ -220,8 +167,7 @@
 		 for(i=0;i<=2;i++){
 			$('.cd-gallery ul').append('<li class="gap"></li>');
 		 }
-		 $('#all_product').trigger('click')
-		 $('.div_loading').fadeOut();
+		 $('#all_product').trigger('click');
     });
 
 	/*$('#logo').bind('click',function(){

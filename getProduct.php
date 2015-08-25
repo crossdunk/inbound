@@ -37,7 +37,8 @@ if($subject!=''){
 }
 $db_conn=null; //結束與資料庫連線
 if(empty($_GET['callback'])) echo json_encode($row);
-else echo "{$_GET['callback']}(json_encode($row))"; 
+else echo $_GET['callback'].'('.json_encode($row).')';
+//print $_GET['callback'] .'(' . json_encode($row).')';
 }
 
 
