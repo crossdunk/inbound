@@ -9,8 +9,7 @@ if($subject!=''){
   //$db_conn->beginTransaction();
   $sql = "SELECT  `pdt_num`,`pdt_subject`,`pdt_title`,`pdt_img`,`pdt_price`,`pdt_keyword`,`pdt_content`
             FROM `product` 
-            WHERE `pdt_subject` 
-            LIKE :subject 
+            WHERE `pdt_subject` LIKE :subject 
             AND pdt_status = '啟用'
             AND pdt_startT <= now() 
             AND pdt_endT > now() ";
@@ -37,7 +36,8 @@ if($subject!=''){
   
 }
 $db_conn=null; //結束與資料庫連線
-print $_GET['callback'] .'(' . json_encode($row).')';
+if(empty($_GET['callback'])) echo json_encode($row);
+else echo "{$_GET['callback']}(json_encode($row))"; 
 }
 
 
